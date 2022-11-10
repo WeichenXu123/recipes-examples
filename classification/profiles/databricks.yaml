@@ -18,12 +18,12 @@ SPLIT_RATIOS: [0.75, 0.125, 0.125]
 INGEST_CONFIG:
   # For different options please read: https://github.com/mlflow/mlp-classification-template#ingest-step
   using: parquet
-  location: "/dbfs/databricks-datasets/credit-card-fraud/data/part-00000-tid-898991165078798880-9c1caa7b-283d-47c4-9be1-aa61587b3675-0-c000.snappy.parquet"
+  location: "/dbfs/weichen/test/sample.parquet"
 
 INGEST_SCORING_CONFIG:
   # For different options please read: https://github.com/mlflow/mlp-classification-template#batch-scoring
   using: parquet
-  location: "/dbfs/databricks-datasets/credit-card-fraud/data/part-00000-tid-898991165078798880-9c1caa7b-283d-47c4-9be1-aa61587b3675-0-c000.snappy.parquet"
+  location: "/dbfs/weichen/test/sample.parquet"
 
 PREDICT_OUTPUT_CONFIG:
   # For different options please read: https://github.com/mlflow/mlp-classification-template#predict-step
